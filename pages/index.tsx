@@ -36,8 +36,8 @@ export default function Home() {
 						</h1>
 
 						<p className="sm:text-lg md:text-xl">
-							I'm Jamie Wade. I'm a Front-end Engineer based in the UK, working
-							with Craft CMS, GraphQL, Tailwind, and Next.js.
+							I&apos;m Jamie Wade. I&apos;m a Front-end Engineer based in the
+							UK, working with Craft CMS, GraphQL, Tailwind, and Next.js.
 						</p>
 
 						<p className="text-gray-400 md:text-lg">
