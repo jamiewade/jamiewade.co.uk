@@ -20,7 +20,7 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="flex flex-col bg-white text-gray-600 w-full h-full">
+			<main className="flex flex-col bg-white text-gray-600 w-full h-full dark:bg-slate-800 dark:text-gray-200">
 				<div className="my-auto pt-6 container">
 					<div className="flex flex-col gap-2 text-center sm:gap-3 sm:mx-auto sm:max-w-2xl md:gap-4">
 						<Image
@@ -31,7 +31,7 @@ export default function Home() {
 							width={144}
 						/>
 
-						<h1 className="font-bold text-gray-800 text-2xl sm:text-3xl md:text-4xl">
+						<h1 className="font-bold text-gray-800 text-2xl sm:text-3xl md:text-4xl dark:text-gray-50">
 							Nice to meet you{" "}
 							<span role="img" aria-label="Waving hand emoji">
 								👋
@@ -63,7 +63,7 @@ export default function Home() {
 
 				<footer className="pt-8 text-gray-400 text-center text-sm">
 					<div className="container">
-						<div className="grid gap-3 border-t border-gray-100 py-6 md:flex md:justify-between">
+						<div className="grid gap-3 border-t border-gray-100 py-6 md:flex md:justify-between dark:border-gray-600">
 							<div className="md:order-2">
 								<p>
 									Built with ♥ using{" "}
