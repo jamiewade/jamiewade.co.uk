@@ -5,6 +5,7 @@ import Link from "next/link";
 
 // Images
 import GitHubIcon from "../public/github.svg";
+import Memoji from "../public/memoji.png";
 
 export default function Home() {
 	return (
@@ -16,9 +17,45 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main className="flex flex-col bg-white text-gray-600 w-screen min-h-screen">
+			<main className="flex flex-col bg-white text-gray-600 w-full h-full">
 				<div className="my-auto pt-6 container">
-					<p>Top content</p>
+					<div className="flex flex-col gap-2 text-center sm:gap-3 sm:mx-auto sm:max-w-2xl md:gap-4">
+						<Image
+							alt="Jamie Wade"
+							className="mx-auto mb-2"
+							height={144}
+							src={Memoji}
+							width={144}
+						/>
+
+						<h1 className="font-bold text-gray-800 text-2xl sm:text-3xl md:text-4xl">
+							Nice to meet you{" "}
+							<span role="img" aria-label="Waving hand emoji">
+								👋
+							</span>
+						</h1>
+
+						<p className="sm:text-lg md:text-xl">
+							I'm Jamie Wade. I'm a Front-end Engineer based in the UK, working
+							with Craft CMS, GraphQL, Tailwind, and Next.js.
+						</p>
+
+						<p className="text-gray-400 md:text-lg">
+							I also have experience with Shopify, PHP, Laravel, and Python, and
+							other React frameworks such as React Native, and Gatsby.
+						</p>
+
+						<div className="mt-4">
+							<Link href="https://github.com/jamiewade" legacyBehavior passHref>
+								<a
+									className="inline-block rounded bg-indigo-600 px-4 py-3 leading-none text-white transition hover:bg-indigo-700 sm:py-2.5 sm:text-lg"
+									target={"_blank"}
+								>
+									Find me on GitHub
+								</a>
+							</Link>
+						</div>
+					</div>
 				</div>
 
 				<footer className="pt-8 text-gray-400 text-center text-sm">
@@ -37,7 +74,7 @@ export default function Home() {
 										<a className="hover:underline" target={"_blank"}>
 											Tailwind
 										</a>
-									</Link>{" "}
+									</Link>
 								</p>
 							</div>
 
