@@ -1,4 +1,10 @@
+// Framework
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+
+// Images
+import GitHubIcon from "../public/github.svg";
 
 export default function Home() {
 	return (
@@ -10,17 +16,52 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
-				<div className="container">
-					<p className="font-bold text-3xl">Lorem!</p>
-
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
-						blanditiis fugit eos obcaecati, reprehenderit itaque dolorum totam
-						dolores non fuga iusto sunt aperiam saepe necessitatibus eligendi.
-						Repudiandae ex tempora blanditiis!
-					</p>
+			<main className="flex flex-col bg-white text-gray-600 w-screen min-h-screen">
+				<div className="my-auto pt-6 container">
+					<p>Top content</p>
 				</div>
+
+				<footer className="pt-8 text-gray-400 text-center text-sm">
+					<div className="container">
+						<div className="grid gap-3 border-t border-gray-100 py-6 md:flex md:justify-between">
+							<div className="md:order-2">
+								<p>
+									Built with ♥ using{" "}
+									<Link href="https://nextjs.org" legacyBehavior passHref>
+										<a className="hover:underline" target={"_blank"}>
+											Next.js
+										</a>
+									</Link>{" "}
+									&{" "}
+									<Link href="https://tailwindcss.com" legacyBehavior passHref>
+										<a className="hover:underline" target={"_blank"}>
+											Tailwind
+										</a>
+									</Link>{" "}
+								</p>
+							</div>
+
+							<div className="md:order-1">
+								<p>
+									&copy; {new Date().getFullYear()} Jamie Wade. All rights
+									reserved
+								</p>
+							</div>
+
+							<div className="md:order-3">
+								<Link href="https://github.com/jamiewade">
+									<Image
+										alt="Find me on GitHub"
+										className="mx-auto"
+										height={24}
+										src={GitHubIcon}
+										width={24}
+									/>
+								</Link>
+							</div>
+						</div>
+					</div>
+				</footer>
 			</main>
 		</>
 	);
