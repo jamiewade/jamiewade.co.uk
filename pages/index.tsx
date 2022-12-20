@@ -51,7 +51,7 @@ export default function Home() {
 						<div className="mt-2">
 							<Link href="https://github.com/jamiewade" legacyBehavior passHref>
 								<a
-									className="inline-block rounded bg-indigo-600 px-4 py-3 leading-none text-white transition hover:bg-indigo-700 sm:py-2.5 sm:text-lg"
+									className="inline-block rounded bg-indigo-600 px-4 py-3 font-medium leading-none text-white transition hover:bg-indigo-700 sm:py-2.5 sm:text-lg"
 									target={"_blank"}
 								>
 									Find me on GitHub
