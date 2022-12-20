@@ -13,7 +13,11 @@ module.exports = {
 				lg: "4rem",
 			},
 		},
-		extend: {},
+		extend: {
+			minWidth: {
+				screen: "320px",
+			},
+		},
 	},
 	plugins: [],
 };
