@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Images
-import GitHubIcon from "../public/github.svg";
-import Memoji from "../public/memoji.png";
+import GitHubIcon from "public/github.svg";
+import Memoji from "public/memoji.png";
 
 export default function Home() {
 	return (
