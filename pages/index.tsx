@@ -89,14 +89,20 @@ export default function Home() {
 							</div>
 
 							<div className="md:order-3">
-								<Link href="https://github.com/jamiewade">
-									<Image
-										alt="Find me on GitHub"
-										className="mx-auto"
-										height={24}
-										src={GitHubIcon}
-										width={24}
-									/>
+								<Link
+									href="https://github.com/jamiewade"
+									legacyBehavior
+									passHref
+								>
+									<a target={"_blank"}>
+										<Image
+											alt="Find me on GitHub"
+											className="mx-auto"
+											height={24}
+											src={GitHubIcon}
+											width={24}
+										/>
+									</a>
 								</Link>
 							</div>
 						</div>
