@@ -14,7 +14,7 @@ export default function Home() {
 				<title>{`Jamie Wade | Software Engineer`}</title>
 				<meta
 					name='description'
-					content='Jamie Wade is a Software Engineer based in the UK. Jamie has years of experience working with Craft CMS, as well as experience with using tools such as Tailwind, PostCSS, JavaScript, Alpine.js, React, Gatsby, Next.js, Shopify, Laravel, and Python.'
+					content='Jamie Wade is a Senior Software Engineer based in the UK. Jamie has years of experience working with Craft CMS, as well as experience with using React, TypeScript, JavaScript, Next.js, Tailwind, PostCSS, GraphQL, and Alpine.js'
 				/>
 				<meta
 					name='viewport'
