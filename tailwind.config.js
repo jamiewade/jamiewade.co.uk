@@ -1,21 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
-		"./pages/**/*.{js,ts,jsx,tsx}",
-		"./components/**/*.{js,ts,jsx,tsx}",
+		'./pages/**/*.{js,ts,jsx,tsx}',
+		'./components/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
-		container: {
+		ontainer: {
 			center: true,
 			padding: {
-				DEFAULT: "2rem",
-				md: "3rem",
-				lg: "4rem",
+				DEFAULT: '2rem',
+				md: '3rem',
+				lg: '4rem',
 			},
 		},
 		extend: {
 			minWidth: {
-				screen: "320px",
+				screen: '320px',
 			},
 		},
 	},
