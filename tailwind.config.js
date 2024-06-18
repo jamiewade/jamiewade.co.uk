@@ -5,7 +5,7 @@ module.exports = {
 		'./components/**/*.{js,ts,jsx,tsx}',
 	],
 	theme: {
-		ontainer: {
+		container: {
 			center: true,
 			padding: {
 				DEFAULT: '2rem',
