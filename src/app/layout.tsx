@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { Viewport } from 'next';
 import { Inter } from 'next/font/google';
 
 import './globals.css';
@@ -9,6 +10,13 @@ const inter = Inter({
 	variable: '--font-inter',
 	subsets: ['latin'],
 });
+
+export const viewport: Viewport = {
+	themeColor: [
+		{ media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
+		{ media: '(prefers-color-scheme: dark)', color: '#000000' },
+	],
+};
 
 export const metadata: Metadata = {
 	title: 'Jamie Wade - Software Engineer',
