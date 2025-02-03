@@ -17,7 +17,11 @@ export default function Home(): React.JSX.Element {
 							className={
 								'mb-2 text-sm 2xs:mb-3 2xs:text-base sm:text-lg md:mb-4 md:text-xl lg:text-2xl'
 							}
-						>{`Hello 👋 My name is`}</p>
+						>
+							<span className={'opacity-50'}>{`Hello `}</span>
+							<span>{`👋`}</span>
+							<span className={'opacity-50'}>{` My name is`}</span>
+						</p>
 
 						<h1
 							className={
@@ -30,7 +34,7 @@ export default function Home(): React.JSX.Element {
 
 						<p
 							className={
-								'mb-8 text-sm max-w-72 2xs:mb-9 2xs:text-base 2xs:max-w-xs xs:max-w-md sm:text-lg md:mb-10 md:text-xl md:max-w-lg lg:text-2xl lg:max-w-2xl'
+								'mb-8 opacity-60 text-sm max-w-72 2xs:mb-9 2xs:text-base 2xs:max-w-xs xs:max-w-md sm:text-lg md:mb-10 md:text-xl md:max-w-lg lg:text-2xl lg:max-w-2xl'
 							}
 						>
 							{`I'm a Software Engineer from the UK, working with Next.js, TypeScript,
@@ -61,7 +65,7 @@ Tailwind, React, and Craft CMS`}
 					>
 						<p className={'xs:order-2 xs:text-right'}>
 							{`Built with `}
-							<span className={'text-emerald-500'}>♥</span>
+							<span className={'text-emerald-500'}>&#x2665;&#xFE0E;</span>
 							{` using Next.js`}
 						</p>
 
