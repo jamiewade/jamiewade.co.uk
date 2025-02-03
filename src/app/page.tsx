@@ -56,11 +56,11 @@ Tailwind, React, and Craft CMS`}
 				</div>
 			</main>
 
-			<footer className={'mt-auto text-center text-sm lg:text-base'}>
+			<footer className={'mt-auto text-center text-sm'}>
 				<div className={'container'}>
 					<div
 						className={
-							'grid gap-3 border-t border-emerald-500 py-4 w-full xs:grid-cols-2 xs:px-4'
+							'grid gap-3 border-t border-emerald-500 py-4 w-full xs:grid-cols-2 xs:px-4 sm:py-5 md:py-6'
 						}
 					>
 						<p className={'xs:order-2 xs:text-right'}>
