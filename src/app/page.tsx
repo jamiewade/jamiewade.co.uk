@@ -14,12 +14,14 @@ export default function Home(): React.JSX.Element {
 						}
 					>
 						<p
-							className={'mb-2 text-sm sm:mb-4 lg:mb-6 lg:text-base xl:text-xl'}
+							className={
+								'mb-2 text-sm 2xs:mb-3 2xs:text-base sm:text-lg md:mb-4 md:text-xl lg:text-2xl'
+							}
 						>{`Hello 👋 My name is`}</p>
 
 						<h1
 							className={
-								'mb-4 font-extrabold text-4xl tracking-tighter xs:text-5xl sm:mb-6 md:text-6xl lg:mb-8 lg:text-7xl xl:text-8xl'
+								'mb-4 font-extrabold text-4xl tracking-tighter 2xs:mb-5 2xs:text-5xl xs:text-6xl sm:text-7xl md:mb-6 md:text-8xl'
 							}
 						>
 							Jamie Wade
@@ -28,7 +30,7 @@ export default function Home(): React.JSX.Element {
 
 						<p
 							className={
-								'mb-8 text-sm sm:mb-10 sm:max-w-md sm:text-base md:max-w-lg lg:mb-12 lg:text-lg xl:max-w-2xl xl:text-2xl'
+								'mb-8 text-sm max-w-72 2xs:mb-9 2xs:text-base 2xs:max-w-xs xs:max-w-md sm:text-lg md:mb-10 md:text-xl md:max-w-lg lg:text-2xl lg:max-w-2xl'
 							}
 						>
 							{`I'm a Software Engineer from the UK, working with Next.js, TypeScript,
