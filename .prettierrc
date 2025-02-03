@@ -1,0 +1,26 @@
+{
+	"plugins": ["@ianvs/prettier-plugin-sort-imports"],
+	"arrowParens": "always",
+	"bracketSameLine": false,
+	"bracketSpacing": true,
+	"endOfLine": "lf",
+	"jsxSingleQuote": true,
+	"semi": true,
+	"singleAttributePerLine": true,
+	"singleQuote": true,
+	"tabWidth": 2,
+	"trailingComma": "es5",
+	"useTabs": true,
+	"importOrder": [
+		"^react$",
+		"<THIRD_PARTY_MODULES>",
+		"",
+		"^(@/lib)/(.*)$",
+		"^(@/queries)/(.*)$",
+		"^(@/schemas)/(.*)$",
+		"^(@/layouts)/(.*)$",
+		"^(@/utils)/(.*)$",
+		"^(@/components)/(.*)$",
+		"^[./]"
+	]
+}
