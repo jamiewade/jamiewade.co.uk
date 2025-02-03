@@ -26,7 +26,7 @@ export default function Home() {
 
 						<p
 							className={
-								'mb-8 text-sm sm:mb-10 sm:max-w-md sm:text-base md:max-w-lg lg:mb-12 lg:text-lg xl:max-w-2xl '
+								'mb-8 text-sm sm:mb-10 sm:max-w-md sm:text-base md:max-w-lg lg:mb-12 lg:text-lg xl:max-w-2xl xl:text-2xl'
 							}
 						>
 							{`I'm a Software Engineer from the UK, working with Next.js, TypeScript,
