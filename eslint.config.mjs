@@ -10,7 +10,37 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-	...compat.extends('next/core-web-vitals', 'next/typescript'),
+	{
+		files: ['**/*.ts', '**/*.tsx'],
+		languageOptions: {
+			parser: '@typescript-eslint/parser',
+			parserOptions: {
+				project: './tsconfig.json',
+				tsconfigRootDir: __dirname,
+				sourceType: 'module',
+			},
+		},
+		rules: {
+			curly: 'error',
+			'no-console': 'error',
+			'@typescript-eslint/explicit-function-return-type': 'error',
+			'@typescript-eslint/no-misused-promises': [
+				'error',
+				{
+					checksVoidReturn: {
+						attributes: false,
+					},
+				},
+			],
+			'@typescript-eslint/strict-boolean-expressions': 'error',
+		},
+	},
+	...compat.extends(
+		'next/core-web-vitals',
+		'next/typescript',
+		'plugin:@typescript-eslint/recommended-requiring-type-checking',
+		'plugin:@typescript-eslint/strict-type-checked'
+	),
 ];
 
 export default eslintConfig;

@@ -1,7 +1,8 @@
+import React from 'react';
 import Link from 'next/link';
 
-export default function Home() {
-	const currentYear = new Date().getFullYear();
+export default function Home(): React.JSX.Element {
+	const currentYear = new Date().getFullYear().toString();
 
 	return (
 		<>
@@ -21,7 +22,8 @@ export default function Home() {
 								'mb-4 font-extrabold text-4xl tracking-tighter xs:text-5xl sm:mb-6 md:text-6xl lg:mb-8 lg:text-7xl xl:text-8xl'
 							}
 						>
-							Jamie Wade<span className={'text-emerald-500'}>.</span>
+							Jamie Wade
+							<span className={'text-emerald-500'}>.</span>
 						</h1>
 
 						<p

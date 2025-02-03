@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 
 import './globals.css';
 
+import React from 'react';
+
 const inter = Inter({
 	variable: '--font-inter',
 	subsets: ['latin'],
@@ -17,7 +19,7 @@ export default function RootLayout({
 	children,
 }: Readonly<{
 	children: React.ReactNode;
-}>) {
+}>): React.JSX.Element {
 	return (
 		<html lang='en'>
 			<body className={`flex flex-col ${inter.variable} antialiased`}>
