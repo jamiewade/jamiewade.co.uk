@@ -47,6 +47,7 @@ export default function Home(): React.JSX.Element {
 									'block rounded-lg bg-emerald-500 px-4 py-3 font-extrabold text-sm text-white transition duration-200 hover:bg-emerald-600 sm:text-base lg:text-lg'
 								}
 								href={'https://github.com/jamiewade'}
+								target={'_blank'}
 							>
 								Find me on GitHub
 							</Link>
