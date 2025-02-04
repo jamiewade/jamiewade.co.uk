@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
 	title: 'Jamie Wade - Software Engineer',
 	description:
-		'Jamie Wade is a Senior Software Engineer based in the UK. Jamie has years of experience working with Next.js, Tailwind CSS, JavaScript, and Craft CMS, as well as experience with using TypeScript, React, PostCSS, and GraphQL.',
+		'Jamie Wade is a Senior Software Engineer based in the UK. Jamie has years of experience working with Next.js, Tailwind CSS, JavaScript, and Craft CMS, as well as experience with using TypeScript, Zod, React, PostCSS, and GraphQL.',
 };
 
 export default function RootLayout({
