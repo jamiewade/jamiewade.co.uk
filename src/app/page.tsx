@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { RiGithubFill, RiTwitterXFill } from 'react-icons/ri';
 
 import Title from '@/components/ui/Title';
 
@@ -27,17 +28,33 @@ export default function Home(): React.JSX.Element {
 				<span className={'text-emerald-500'}>.</span>
 			</p>
 
-			<p>
-				<Link
-					className={
-						'block rounded-lg bg-emerald-500 px-4 py-3 font-extrabold text-sm text-white transition duration-200 hover:bg-emerald-600 sm:text-base lg:text-lg'
-					}
-					href={'https://github.com/jamiewade'}
-					target={'_blank'}
-				>
-					Find me on GitHub
-				</Link>
-			</p>
+			<ul className={'flex gap-2 text-4xl sm:gap-4 sm:text-5xl'}>
+				<li>
+					<Link
+						className={
+							'block transition duration-200 active:text-emerald-500 focus:text-emerald-500 hover:text-emerald-500'
+						}
+						href={'https://github.com/jamiewade'}
+						target={'_blank'}
+						title={'Follow me on GitHub'}
+					>
+						<RiGithubFill />
+					</Link>
+				</li>
+
+				<li>
+					<Link
+						className={
+							'block transition duration-200 active:text-emerald-500 focus:text-emerald-500 hover:text-emerald-500'
+						}
+						href={'https://x.com/itsjamiewade'}
+						target={'_blank'}
+						title={'Follow me on X'}
+					>
+						<RiTwitterXFill />
+					</Link>
+				</li>
+			</ul>
 		</>
 	);
 }
