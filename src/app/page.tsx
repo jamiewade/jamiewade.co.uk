@@ -18,9 +18,9 @@ export default function Home(): React.JSX.Element {
 								'mb-2 text-sm 2xs:mb-3 2xs:text-base sm:text-lg md:mb-4 md:text-xl lg:text-2xl'
 							}
 						>
-							<span className={'opacity-50'}>{`Hello `}</span>
+							<span className={'opacity-60'}>{`Hello `}</span>
 							<span>{`👋`}</span>
-							<span className={'opacity-50'}>{` My name is`}</span>
+							<span className={'opacity-60'}>{` My name is`}</span>
 						</p>
 
 						<h1
@@ -34,7 +34,7 @@ export default function Home(): React.JSX.Element {
 
 						<p
 							className={
-								'mb-8 opacity-60 text-sm max-w-72 2xs:mb-9 2xs:text-base 2xs:max-w-xs xs:max-w-md sm:text-lg md:mb-10 md:text-xl md:max-w-lg lg:text-2xl lg:max-w-2xl'
+								'mb-8 opacity-80 text-sm max-w-72 2xs:mb-9 2xs:text-base 2xs:max-w-xs xs:max-w-md sm:text-lg md:mb-10 md:text-xl md:max-w-lg lg:text-2xl lg:max-w-2xl'
 							}
 						>
 							{`I'm a Software Engineer from the UK, working with Next.js, TypeScript,
