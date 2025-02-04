@@ -34,7 +34,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`flex flex-col ${inter.variable} antialiased`}>
-				<main className={'flex-grow py-4'}>
+				<main className={'flex-grow py-8 sm:py-12'}>
 					<div className={'flex items-center justify-center w-full h-full'}>
 						<div
 							className={
