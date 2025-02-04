@@ -34,10 +34,10 @@ export default function Home(): React.JSX.Element {
 
 						<p
 							className={
-								'mb-8 opacity-80 text-sm max-w-72 2xs:mb-9 2xs:text-base 2xs:max-w-xs xs:max-w-sm sm:text-lg md:mb-10 md:text-xl md:max-w-xl lg:text-2xl lg:max-w-2xl'
+								'mb-8 opacity-80 text-sm max-w-72 2xs:mb-9 2xs:text-base 2xs:max-w-xs sm:text-lg md:mb-10 md:text-xl md:max-w-xl lg:text-2xl lg:max-w-2xl'
 							}
 						>
-							{`I'm a Software Engineer from the UK, working with Next.js, TypeScript, Zod, Tailwind, React, and Craft CMS`}
+							{`I'm a Software Engineer from the UK working with Next.js, TypeScript, Zod, Tailwind, React, and Craft CMS`}
 							<span className={'text-emerald-500'}>.</span>
 						</p>
 
