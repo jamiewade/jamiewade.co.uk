@@ -29,10 +29,42 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>): React.JSX.Element {
+	const currentYear = new Date().getFullYear().toString();
+
 	return (
 		<html lang='en'>
 			<body className={`flex flex-col ${inter.variable} antialiased`}>
-				{children}
+				<main className={'flex-grow py-4'}>
+					<div className={'flex items-center justify-center w-full h-full'}>
+						<div
+							className={
+								'flex flex-col items-center justify-center text-center container md:items-start md:text-left'
+							}
+						>
+							{children}
+						</div>
+					</div>
+				</main>
+
+				<footer className={'mt-auto text-center text-sm'}>
+					<div className={'container'}>
+						<div
+							className={
+								'grid gap-3 border-t border-emerald-500 py-4 w-full xs:grid-cols-2 xs:px-4 sm:py-5 md:py-6'
+							}
+						>
+							<p className={'xs:order-2 xs:text-right'}>
+								{`Built with `}
+								<span className={'text-emerald-500'}>&#x2665;&#xFE0E;</span>
+								{` using Next.js`}
+							</p>
+
+							<p
+								className={'xs:order-1 xs:text-left'}
+							>{`Jamie Wade © 2010 - ${currentYear}`}</p>
+						</div>
+					</div>
+				</footer>
 			</body>
 		</html>
 	);

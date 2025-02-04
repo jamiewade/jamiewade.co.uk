@@ -3,27 +3,17 @@ import Link from 'next/link';
 
 import Title from '@/components/ui/Title';
 
-export default function Home(): React.JSX.Element {
+export default function NotFound(): React.JSX.Element {
 	return (
 		<>
-			<p
-				className={
-					'mb-2 text-sm 2xs:mb-3 2xs:text-base sm:text-lg md:mb-4 md:text-xl lg:text-2xl'
-				}
-			>
-				<span className={'opacity-60'}>{`Hello `}</span>
-				<span>{`👋`}</span>
-				<span className={'opacity-60'}>{` My name is`}</span>
-			</p>
-
-			<Title text={'Jamie Wade'} />
+			<Title text={'Uh oh'} />
 
 			<p
 				className={
 					'mb-8 opacity-80 text-sm max-w-72 2xs:mb-9 2xs:text-base 2xs:max-w-xs sm:text-lg md:mb-10 md:text-xl md:max-w-xl lg:text-2xl lg:max-w-2xl'
 				}
 			>
-				{`I'm a Software Engineer from the UK working with Next.js, TypeScript, Zod, Tailwind, React, and Craft CMS`}
+				{`You have found a page that does not exist`}
 				<span className={'text-emerald-500'}>.</span>
 			</p>
 
@@ -32,10 +22,9 @@ export default function Home(): React.JSX.Element {
 					className={
 						'block rounded-lg bg-emerald-500 px-4 py-3 font-extrabold text-sm text-white transition duration-200 hover:bg-emerald-600 sm:text-base lg:text-lg'
 					}
-					href={'https://github.com/jamiewade'}
-					target={'_blank'}
+					href={'/'}
 				>
-					Find me on GitHub
+					Back to homepage
 				</Link>
 			</p>
 		</>
