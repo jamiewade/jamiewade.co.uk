@@ -1,3 +1,4 @@
+import { GoogleTagManager } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 import { Viewport } from 'next';
 import { Inter } from 'next/font/google';
@@ -29,6 +30,7 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>): React.JSX.Element {
+	const gtmId: string = process.env.GTM_ID ?? '';
 	const currentYear = new Date().getFullYear().toString();
 
 	return (
@@ -66,6 +68,10 @@ export default function RootLayout({
 					</div>
 				</footer>
 			</body>
+
+			{process.env.NODE_ENV === 'production' && (
+				<GoogleTagManager gtmId={gtmId} />
+			)}
 		</html>
 	);
 }
