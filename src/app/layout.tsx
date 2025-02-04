@@ -7,6 +7,8 @@ import './globals.css';
 
 import React from 'react';
 
+import ThemeSelector from '@/components/ThemeSelector';
+
 const inter = Inter({
 	variable: '--font-inter',
 	subsets: ['latin'],
@@ -35,8 +37,10 @@ export default function RootLayout({
 
 	return (
 		<html lang='en'>
-			<body className={`flex flex-col ${inter.variable} antialiased`}>
-				<main className={'flex-grow py-8 sm:py-12'}>
+			<body className={`flex flex-col relative ${inter.variable} antialiased`}>
+				<ThemeSelector />
+
+				<main className={'flex-grow pt-16 pb-8 sm:py-12'}>
 					<div className={'flex items-center justify-center w-full h-full'}>
 						<div
 							className={
