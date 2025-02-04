@@ -1,7 +1,12 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import Title from '@/components/ui/Title';
+
+export const metadata: Metadata = {
+	title: 'Page Not Found | Jamie Wade - Software Engineer',
+};
 
 export default function NotFound(): React.JSX.Element {
 	return (
